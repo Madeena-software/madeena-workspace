@@ -47,6 +47,13 @@ return [
             'report' => false,
         ],
 
+        'enterprise_data' => [
+            'driver' => 'local',
+            'root' => env('DATA_DRIVE_PATH', '/mnt/data/madeena_storage'),
+            'throw' => false,
+            'report' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
